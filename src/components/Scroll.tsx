@@ -24,7 +24,7 @@ interface Passenger {
 interface Props {
   isLastItem: boolean;
   onFetchMorePassengers: () => void;
-  children?: any;
+  children?: React.ReactNode;
 }
 
 const Item: React.FC<Props> = ({ children, isLastItem, onFetchMorePassengers }) => {
